@@ -100,6 +100,7 @@ form button:hover{
     font-size: 14px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 10px 25px 10px 20px;
     padding: 0 0 5px 15px
 }
@@ -273,6 +274,8 @@ footer {
     margin: 5px 10px;
     padding: 0 0 5px 10px;
     font-size: 12px;
+    align-items: center;
+    
   }
 
   .btns {
@@ -293,5 +296,8 @@ footer {
 
   .manipulate-btns button{
     max-width: 80px;
+  }
+  .manipulate-btns button:nth-child(2){
+    min-width: 100px;
   }
 }
