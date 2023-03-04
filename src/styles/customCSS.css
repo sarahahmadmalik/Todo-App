@@ -190,10 +190,13 @@ footer {
   /* adjust padding and margins for smaller screens */
   .container {
     padding: 5px;
-    min-width: 90%;
+    min-width: 80%;
     min-height: 80%;
   }
 
+  .form input{
+    max-width: 50%;
+  }
   .main ul li {
     margin: 5px;
   }
@@ -213,6 +216,7 @@ footer {
     font-size: 12px;
   }
 
+ 
   .btns button {
     width: 90px;
     font-size: 12px;
@@ -220,34 +224,74 @@ footer {
 
   /* make form input and button full width on smaller screens */
   form input {
-    width: 100%;
-    border-radius: 11px;
+    width: 55%;
+    border-radius: 11px 0px 0px 11px;
   }
 
   form button {
+    width: 40%;
+    border-radius: 0px 11px 11px 0px;
+  }
+
+  .btns{
     width: 100%;
-    border-radius: 11px;
+    justify-content: flex-end;
+  }
+
+  .btns button{
+    width: 40%;
   }
 }
+@media only screen and (max-width: 480px) {
+  .container {
+    min-width: 90%;
+    min-height: 80%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
 
-/* adjust font sizes for even smaller screens */
-@media screen and (max-width: 480px) {
   .title {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  form {
+    margin: 10px 5px;
+    flex-wrap: wrap;
+  }
+
+  form input {
+    border-radius: 11px 0px 0px 11px;
+    width: 60%;
+  }
+
+  form button {
+    width: 30%;
+   
   }
 
   .main ul li {
-    font-size: 10px;
+    margin: 5px 10px;
+    padding: 0 0 5px 10px;
+    font-size: 12px;
   }
 
-  .totalTodos,
-  .completed,
-  .uncompleted {
-    font-size: 10px;
+  .btns {
+    width: 100%;
+    margin: 10px 10% 0 1%;
+    justify-content: center;
   }
 
   .btns button {
-    width: 80px;
-    font-size: 10px;
+  
+    max-width: 50%;
+    font-size: 12px;
+  }
+
+  .manipulate-btns{
+    width: 70%;
+  }
+
+  .manipulate-btns button{
+    max-width: 80px;
   }
 }
