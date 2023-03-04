@@ -185,3 +185,69 @@ footer {
     margin-top: 20px;
     border-radius: 5px;
 } */
+
+@media screen and (max-width: 768px) {
+  /* adjust padding and margins for smaller screens */
+  .container {
+    padding: 5px;
+    min-width: 90%;
+    min-height: 80%;
+  }
+
+  .main ul li {
+    margin: 5px;
+  }
+
+  /* adjust font sizes for smaller screens */
+  .title {
+    font-size: 18px;
+  }
+
+  .main ul li {
+    font-size: 12px;
+  }
+
+  .totalTodos,
+  .completed,
+  .uncompleted {
+    font-size: 12px;
+  }
+
+  .btns button {
+    width: 90px;
+    font-size: 12px;
+  }
+
+  /* make form input and button full width on smaller screens */
+  form input {
+    width: 100%;
+    border-radius: 11px;
+  }
+
+  form button {
+    width: 100%;
+    border-radius: 11px;
+  }
+}
+
+/* adjust font sizes for even smaller screens */
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .main ul li {
+    font-size: 10px;
+  }
+
+  .totalTodos,
+  .completed,
+  .uncompleted {
+    font-size: 10px;
+  }
+
+  .btns button {
+    width: 80px;
+    font-size: 10px;
+  }
+}
